@@ -1,0 +1,15 @@
+
+
+
+
+#main{
+    padding: 230px 20px 0;
+}
+
+@media (max-width: 950px ) {
+
+    #main {
+        padding: 200px 5% 0;
+    }
+
+}

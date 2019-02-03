@@ -6,8 +6,9 @@ body {
     background-color: #b49090!important;
     font-family: Optima, Courier New, Courier, mono;
     font-size: 16px;
-    height: 100vh;
+    min-height: 100%!important;
 }
+
 
 #container {
 
@@ -70,11 +71,14 @@ button:focus {
         top: 32px;
         letter-spacing: 3px;
         height: 33px;
-        width: 100%;
+        width: 95%;
         background-color: #eeeeee;
         margin:auto ;
         border: 3px solid #0e648c;
+        font-size: 0.8rem;
         border-radius: 8px;
+        text-align: center;
+
         font-family:  Optima, "Courier New", Courier, mono;
     }
     img{
@@ -110,6 +114,8 @@ button:focus {
         padding: 0!important;
         height: 70px;
         transition: background-color,500ms;
+        width: 90%;
+        margin:  0 auto;
     }
     #navbarNav{
         height: 100%;!important;
@@ -129,7 +135,7 @@ button:focus {
         background-color: transparent !important;
     }
     .nav-item{
-        margin: 0 10px;
+        margin: 0 5px;
         transition: background-color,border,ease-in 200ms;
     }
     .nav-item a{
@@ -170,11 +176,12 @@ button:focus {
         background-color: #eeeeee;
         padding: 3px 5px;
         margin-left: 15px;
-        font-size: 16px;
         margin-top: 85px;
         border: 3px solid #0e648c;
         border-radius: 8px;
+        font-size: 1rem;
         font-family:  Optima, "Courier New", Courier, mono;
+        text-align: center;
     }
     img{
         height: auto;
@@ -188,7 +195,7 @@ button:focus {
         margin: 0;
     }
     #main{
-        padding:  0 60px;
+        padding:  20px 60px;
     }
 
     #container {
@@ -197,6 +204,9 @@ button:focus {
         background-color: #649bb0 ;
 
 
+    }
+    p {
+        padding: 0 20px;
     }
 
 

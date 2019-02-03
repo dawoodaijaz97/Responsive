@@ -1,0 +1,25 @@
+
+
+.title{
+    font-size: 22px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.content_text{
+    width: 60%;
+    text-align: justify;
+}
+
+@media (max-width: 950px ) {
+
+    #main {
+        padding: 30px 10px;
+    }
+
+
+    .content_text{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
