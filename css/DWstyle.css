@@ -165,20 +165,20 @@ ul {
 /* The 'project**' ids are used in the projects/Project MN.html : <div class="playerCont" id="projectMN"> */
 
 #backgroundMN{
-    background: url("../imgs/backgroundMN.jpg") no-repeat center;
+    background: url("../images/backgroundMN.jpg") no-repeat center;
     background-size: cover;
 }
 #backgroundBL{
-    background: url("../imgs/backgroundBL.jpg") no-repeat center;
+    background: url("../images/backgroundBL.jpg") no-repeat center;
     background-size: cover;
 }
 #backgroundJBK{
-    background: url("../imgs/backgroundJBK.jpg") no-repeat center;
+    background: url("../images/backgroundJBK.jpg") no-repeat center;
     background-size: cover;
 }
 
 #background2{
-    background: url("../imgs/background2.jpg") no-repeat center;
+    background: url("../images/background2.jpg") no-repeat center;
 }
 
 
@@ -188,7 +188,7 @@ ul {
     left: 0;
     right: 0;
     margin: auto;
-/*     background: url("../imgs/background1.jpg") no-repeat 0px; Jan22 */
+/*     background: url("../images/background1.jpg") no-repeat 0px; Jan22 */
     width: 100%;
     padding: 40px 0px;
     z-index: 100;
