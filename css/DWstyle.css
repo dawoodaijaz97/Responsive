@@ -148,6 +148,22 @@ ul {
 
 
 }
+/*.container{*/
+    /*display: inline-block;*/
+    /*width: 45%!important;*/
+/*}*/
+#slider{
+    width: 150px;
+    height: 15px;
+    margin: 0 auto;
+}
+#slider.ui-slider{
+    background-color: black;
+}
+
+#slider .ui-slider-handle{
+    display: none;
+}
 #footer{
     background-color: rgba(80,75,91,0.99) !important;
 }
@@ -162,7 +178,7 @@ ul {
 
 /*fixed player container styles*/
 
-/* The 'project**' ids are used in the projects/Project MN.html : <div class="playerCont" id="projectMN"> */
+/* The 'project1**' ids are used in the projects/Project MN.html : <div class="playerCont" id="projectMN"> */
 
 #backgroundMN{
     background: url("../images/backgroundMN.jpg") no-repeat center;

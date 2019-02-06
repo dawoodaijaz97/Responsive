@@ -15,24 +15,32 @@ $("document").ready(function () {
                 $(".hamburger").removeClass("is-active");
             }
         }
+
         setMenu();
     });
     if ($(window).width() < 969) {
         $(".hamburger").trigger("click");
-        // $(".navbar-collapse").removeClass("show").addClass("collapse")
     }
 
 
 });
 var setMenu = function () {
-    if ($(window).width() > 969 && $(window).width() < 1400) {
-        console.log("true screen");
-        $(".nav-item .nav-link").css({
-            fontSize: "0.8rem"
-        })
-    }else{
-        $(".nav-item .nav-link").css({
-            fontSize: "1rem"
-        })
+
+    if($(window).width() > 969){
+        $(".navbar-brand").css("display","none");
+        if(!$(".navbar-collapse").hasClass("show")){
+            $(".navbar-collapse").addClass("show");
+            $(".navbar-nav").toggleClass("move-navbar");
+            $(".navbar").toggleClass("trans-navbar");
+            $(".hamburger").addClass("is-active");
+        }
     }
+    else {
+        $(".navbar-brand").css("display","inline-block");
+        // if($(".navbar-collapse").hasClass("show")){
+        //     $(".hamburger").toggleClass("is-active");
+        // }
+    }
+
+
 };
