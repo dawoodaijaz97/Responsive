@@ -35,6 +35,8 @@ let createWave = function () {
     });
     waveSurfer.on("audioprocess", function () {
 
+        let progressPart="";
+        let totalPart = "";
         let tDuration = wave.getDuration();
         let tMin = Math.floor(tDuration / 60);
         let tSec = Math.floor(tDuration % 60);
@@ -48,11 +50,21 @@ let createWave = function () {
         }
         let sec = Math.floor(progress % 60);
         if (sec < 10) {
-            durationP.text(min + ":0" + sec + " | " + tMin + ":" + tSec);
+            progressPart = min+":0"+sec+"|";
+
         }
         else{
-            durationP.text(min + ":" + sec + " | " + tMin + ":" + tSec);
+            progressPart = min+":"+sec+"|";
+
         }
+        if(tSec<10){
+            totalPart = tMin+":0"+tSec;
+
+        }else {
+            totalPart = tMin+":"+tSec;
+        }
+
+        durationP.text(progressPart+totalPart);
 
     });
     waveSurfer.on("stop", function () {
