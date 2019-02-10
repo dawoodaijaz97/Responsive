@@ -2,6 +2,7 @@ function Track (name, path) { //Track Object,The Object represent each Audio or 
     this.name = name; // Name of the track
     this.name2 = name.replace(/[^A-Z0-9]/ig, ""); //name of the track after after removing spaces and special characters from the track name
     this.path = path; //URL or permalink to the audio file Ex (audio/alive.mp3 or https://web006.mp3-youtube.download/tmp/20190107105311_20496a94-d44b-4e28-95bb-06a2c6063b3a/krewella-alive-video?md5=rEvap_kahikTI3DddnKuoQ&expires=1546858417)
+    this.PCM = 0;
 };
 
 
